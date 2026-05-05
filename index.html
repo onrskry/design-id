@@ -3786,3 +3786,34 @@ window.UPLOADED_IMAGES = [{"name":"Character_21.webp","dataUrl":"https://rrzvgzj
     padding-top: 0 !important;
   }
 </style>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const screen1 = document.getElementById("screen1");
+
+  const screen2 = document.getElementById("screen2");
+
+  const screen3 = document.getElementById("screen3");
+
+  if (screen1) screen1.style.display = "none";
+
+  if (screen2) screen2.style.display = "none";
+
+  if (screen3) {
+
+    screen3.classList.add("active");
+
+    screen3.style.display = "flex";
+
+    screen3.style.opacity = "1";
+
+    screen3.style.pointerEvents = "auto";
+
+  }
+
+});
+
+</script>
+
